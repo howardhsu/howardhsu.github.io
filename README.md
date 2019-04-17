@@ -1,2 +1,2 @@
 # howardhsu.github.io
-mirror of homepage
+My homepage
