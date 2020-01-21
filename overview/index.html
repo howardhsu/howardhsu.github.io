@@ -257,11 +257,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
-      Machine Learning
+      Lifelong Learning
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Machine Learning
+        Lifelong Learning
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -335,8 +335,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tdrl/" title="Task Representation Learning" class="md-nav__link">
-      Task Representation Learning
+    <a href="../owl/" title="Open-world Learning" class="md-nav__link">
+      Open-world Learning
     </a>
   </li>
 
@@ -347,8 +347,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../owl/" title="Open-world Learning" class="md-nav__link">
-      Open-world Learning
+    <a href="../llrep/" title="Lifelong Representation Learning" class="md-nav__link">
+      Lifelong Representation Learning
     </a>
   </li>
 
@@ -368,11 +368,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
-      NLP Application
+      NLP Applications
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        NLP Application
+        NLP Applications
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -383,8 +383,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../qa/" title="Question Answering" class="md-nav__link">
+      Question Answering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../absa/" title="Sentiment Analysis" class="md-nav__link">
       Sentiment Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../convai/" title="Conversational AI" class="md-nav__link">
+      Conversational AI
     </a>
   </li>
 
@@ -399,15 +423,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../dataset/" title="Dataset and Resource" class="md-nav__link">
+      Dataset and Resource
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Misc
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         Misc
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -492,7 +528,7 @@
 <h2 id="learning-with-less-human-efforts">Learning with less human efforts</h2>
 <p>Looking forward, there is no free lunch for an ML model and DL is not perfect. As AI aims to free human from intensive labor work, we humans naturally apply constraints(needs) on an ML model. So neither intensive data annotation nor architecture design for a specific task is desirable. This rule out strongly supervised learning with tens of thousands of examples or architecture rich but parameter fewer models. In the end, we are looking for simple and general architectures with a huge amount of parameters to let unlabeled data to fill in. This leads to unsupervised (or self-supervised as there is no perfect unsupervised) representation learning, where training signals can be discovered from the input itself.</p>
 <h2 id="statistical-generalization">Statistical Generalization</h2>
-<p>Even though, the generalization from DL is still biased by the <strong>statistics</strong> of the intensive data. By statistics, we mean the majority wins in representation learning. But in real-world, the long-tail of many specifics determines the performance. What is even worse is that the trained agent is facing a dynamic world, where some data seldomly or never appear before may need to dominate the distribution later. Two directions we focus on are <a href="../tdrl/">task representation learning</a> and <a href="../owl/">open-world learning</a>.</p>
+<p>Even though, the generalization from DL is still biased by the <strong>statistics</strong> of the intensive data. By statistics, we mean the majority wins in representation learning. But in real-world, the long-tail of many specifics determines the performance. What is even worse is that the trained agent is facing a dynamic world, where some data seldomly or never appear before may need to dominate the distribution later. Two directions we focus on are <a href="../llrep/">lifelong representation learning</a> and <a href="../owl/">open-world learning</a>.</p>
 <p>In contrast, the i.i.d assumption from a ML model leads us a frequently mistake in research. We drop the timestamp <strong>TOO MUCH</strong> in testing and 99% of existing datasets lost temporal dependency of examples. By temporal dependency, I mean a USB 3.0 in training but a USB 2.0 in testing; or a iPhone Case in training but a iPhone in testing of recommender system. Randomly shuffling the available data (to manually make the testing has similar distribution as training) and spliting 20% for testing are totally wrong. This may explain why a model with good testing performance has poor performance when facing with human evaluation or real-world deployment. Obviously, a model trained from such a time-distorted dataset can let the model learn very easy post-hoc fact and not recover the hidden causal mechanism of data generation in real-world.</p>
                 
                   
@@ -545,13 +581,13 @@
           </a>
         
         
-          <a href="../tdrl/" title="Task Representation Learning" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../owl/" title="Open-world Learning" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Task Representation Learning
+                Open-world Learning
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

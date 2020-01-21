@@ -255,11 +255,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Machine Learning
+      Lifelong Learning
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Machine Learning
+        Lifelong Learning
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -282,8 +282,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tdrl/" title="Task Representation Learning" class="md-nav__link">
-      Task Representation Learning
+    <a href="../owl/" title="Open-world Learning" class="md-nav__link">
+      Open-world Learning
     </a>
   </li>
 
@@ -294,8 +294,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../owl/" title="Open-world Learning" class="md-nav__link">
-      Open-world Learning
+    <a href="../llrep/" title="Lifelong Representation Learning" class="md-nav__link">
+      Lifelong Representation Learning
     </a>
   </li>
 
@@ -317,14 +317,26 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
-      NLP Application
+      NLP Applications
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        NLP Application
+        NLP Applications
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../qa/" title="Question Answering" class="md-nav__link">
+      Question Answering
+    </a>
+  </li>
+
         
           
           
@@ -389,6 +401,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../convai/" title="Conversational AI" class="md-nav__link">
+      Conversational AI
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -399,15 +423,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../dataset/" title="Dataset and Resource" class="md-nav__link">
+      Dataset and Resource
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Misc
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         Misc
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -493,7 +529,7 @@
 The above ABSA problem can be decomposed into two important sub-tasks: aspect extraction (AE) and aspect sentiment classification (ASC).</p>
 <h2 id="aspect-extraction">Aspect Extraction</h2>
 <p>Given a review sentence, such as <strong>The retina display is beautiful.</strong>, AE aims to find aspects <strong>retina display</strong>. In DL, it is mostly formalized as a sequence labeling problem: label "The retina display is great ." as "O B I O O O" so to extract "retina display" as an aspect. Obviously, the context of an aspect is important and an AI agent needs to have enough domain knowledge to support such extraction, such as <em>A beautiful thing in Laptop could be an aspect.</em> However, counting on the strong supervision from humans aspects-by-aspects for a particular domain is impossible.
-We show that a simple <a href="http://aclweb.org/anthology/P18-2094">domain word embedding</a> can boost the performance. More ideally, a language model can boost it <a href="http://arxiv.org/abs/1904.02232">further</a> as whenever you see some aspects dropped, LM really encouraging the context words to recover that aspects.</p>
+We show that a simple <a href="http://aclweb.org/anthology/P18-2094">domain word embedding</a> can boost the performance. More ideally, a language model can boost it <a href="http://arxiv.org/abs/1904.02232">further</a> as whenever you see some aspects dropped, LM really encouraging the context words to recover that aspects. This is the <strong>first</strong> paper to use BERT for AE and ASC.  </p>
 <h2 id="aspect-sentiment-classification">Aspect Sentiment Classification</h2>
 <p>Given an aspect <strong>retina display</strong> and a review sentence <strong>The retina display is great.</strong>, ASC detects the polarity of that aspect <em>positive</em>. One challenge of ASC is to detect the polarity of opinion expressions and there could be unlimited amount of such expressions to annotate. Again language model can <a href="http://arxiv.org/abs/1904.02232">help</a> this too as human tends to repeat their opinions in their writing so knowing one opinion may help to automatically understand the other. For example, in <em>Terrible product. It could be the last thing I may consider to buy</em>, we may infer the harder opinion of the second sentence from <em>Terrible</em> in the first one so to automatically learn unlimited expressions like that.</p>
                 
@@ -532,7 +568,7 @@ We show that a simple <a href="http://aclweb.org/anthology/P18-2094">domain word
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../owl/" title="Open-world Learning" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../qa/" title="Question Answering" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -541,19 +577,19 @@ We show that a simple <a href="http://aclweb.org/anthology/P18-2094">domain word
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Open-world Learning
+                Question Answering
               </span>
             </div>
           </a>
         
         
-          <a href="../hw/" title="Build a Deep Learning Machine under $1000" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../convai/" title="Conversational AI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Build a Deep Learning Machine under $1000
+                Conversational AI
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
